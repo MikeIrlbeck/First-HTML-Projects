@@ -1,0 +1,51 @@
+body {
+  width: 100%;
+  margin:0;
+  background-color: hsl(39, 70%, 80%)
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, p {
+  margin: 1em auto;
+}
+
+p {
+  width: 60vw;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid rgb(122, 255, 0);
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.fullWidth {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.centerInput {
+  vertical-align: middle;
+}
+

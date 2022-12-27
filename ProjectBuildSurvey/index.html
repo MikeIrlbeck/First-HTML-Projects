@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mike's Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1 id="title">Mike's Survey</h1>
+    <p id="description">Please take five minutes to fill out your <strong>deepest</strong> and <em>darkest</em> secrets... I would really appreciate it!</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input class="fullWidth" id="name" type="text" required placeholder="Software Mike"></label>
+        <label id="email-label">Email: <input class="fullWidth" id="email" type="email" required placeholder="abc@123.com"></label>
+        <label for="dropdown">Our relationship: 
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Close</option>
+            <option value="2">Far</option>
+            <option value="3">North</option>
+            <option value="4">South</option>
+          <select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="number-label">Your lucky number: <input id="number" type="number" min="1" max="500" placeholder="7"</label>
+        <label ><input class="centerInput" id="introvert" value="introvert" name="personality" type="radio"> Introvert</label>
+        <label ><input class="centerInput" id="extravert" value="extravert" name="personality" type="radio"> Extravert</label>
+
+      </fieldset>
+
+      <fieldset>
+        <label><input value="1" type="checkbox"> Power hungry</label>
+        <label><input value="2" type="checkbox"> Emptiness</label>
+        <label><input value="3" type="checkbox"> Hopeful</label>
+        <label><input value="4" type="checkbox"> In love</label>
+        <label><input value="5" type="checkbox"> Seeking God</label>
+      </fieldset>
+
+      <fieldset>
+        <p>Please let me know your comments and feedback here:</p>
+        <textarea class="fullWidth"></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
