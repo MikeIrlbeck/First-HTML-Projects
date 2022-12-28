@@ -14,7 +14,7 @@
         <label id="name-label">Name: <input class="fullWidth" id="name" type="text" required placeholder="Software Mike"></label>
         <label id="email-label">Email: <input class="fullWidth" id="email" type="email" required placeholder="abc@123.com"></label>
         <label for="dropdown">Our relationship: 
-          <select id="dropdown">
+          <select class="fullWidth" id="dropdown">
             <option value="">(select one)</option>
             <option value="1">Close</option>
             <option value="2">Far</option>
@@ -40,7 +40,8 @@
 
       <fieldset>
         <p>Please let me know your comments and feedback here:</p>
-        <textarea class="fullWidth"></textarea>
+        <label for="bio">Provide a bio:
+          <textarea class="inline" id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
       </fieldset>
       <button id="submit" type="submit">Submit</button>
     </form>
