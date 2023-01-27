@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  font-family: 'Anton', sans-serif;
+  font-family: sans-serif;
 }
 
 h2, h3, h4, h5, h6 {
@@ -54,6 +54,8 @@ a {
 
 .logo h1 {
   padding-left: 10px;
+  /* letter-spacing: 5px; */
+  font-size: 30px;
 }
 
 #header-img {
@@ -71,7 +73,12 @@ a {
 #nav-bar li {
   list-style: none;
   position: relative;
-  font-size: 1.25rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight:bold;
+  color:rgb(200, 255, 127);
 }
 
 #nav-bar {
@@ -82,16 +89,26 @@ a {
 }
 
 main {
-  margin-top: 70px;
-  margin-bottom: 25px;
   min-width: 250px;
+  max-width: 600px;
   line-height: 1.5;
+  display: block;
+  margin: 70px auto;
   text-align: center;
   padding: 0 20px;
 }
 
+section {
+  padding: 10px 0;
+}
+
+section:last-child {
+  /* content: ""; */
+  margin-bottom: -40px;
+}
+
 #slogan {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 10 0;
 }
 
@@ -103,14 +120,19 @@ main {
   padding: 10px 0;
 }
 
-#submit {
-  font-size: 1.5rem;
-  background-color: rgb(210, 210, 70);
-  font-weight: bold;
-}
-
 #email {
   width: 200px;
+  padding: 5px;
+}
+
+#submit {
+  --submit-color: rgb(241, 241, 84);
+  font-size: 1.5rem;
+  background-color: var(--submit-color);
+  font-weight: bold;
+  border: 1px solid var(--submit-color);
+  border-radius: 10px;
+  padding: 4px 6px;
 }
 
 .feature {
@@ -122,8 +144,10 @@ main {
   text-align: left;
 }
 
-.fab {
+.fab, .fas {
   font-size: 4rem;
+  width: 50px;
+  text-align: center;
 }
 
 .big {
@@ -154,5 +178,10 @@ section {
 @media only screen and (max-width: 800px) {
   .big {
     font-size: 18px;
+  }
+
+  #slogan {
+    font-size: 2rem;
+    padding: 10 0;
   }
 }
